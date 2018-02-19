@@ -19,7 +19,10 @@ class Animals(FarmAnimals):
         return str(
             dict(kind=self.kind, color=self.color, size=self.size, age=self.age, horns=self.horns, milk=self.milk))
 
-
+class Pigs(Animals):       #  я так добавлял по аналогии совсеми остальными классами.
+        def voice_pig(self): 
+        print("hrruuuuu")
+        
 class Birds(FarmAnimals):
     def __init__(self, kind, color, size, age, gender, eggs):
         super().__init__(kind, color, size, age)
